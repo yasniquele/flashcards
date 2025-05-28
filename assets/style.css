@@ -10,6 +10,10 @@ body {
 
 #container {
     display: flex; 
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 4rem;
+    gap: 3rem;
 }
 
 .cartao {
@@ -22,10 +26,10 @@ body {
 .cartao__conteudo {
     background-color: var(--card-front-color);
     text-align: center;
+    border-radius: 1rem;
     height: 100%;
     transform-style: preserve-3d;
     transition: transform 300ms ease-in-out;
-    border-radius: 1rem;
 }
 
 .cartao__conteudo h3 {
@@ -71,6 +75,7 @@ body {
 .cartao__conteudo__resposta {
     transform: rotateY(180deg);
 }
+
 footer {
     background-color: black;
     color: white;
